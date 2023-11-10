@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Circular Std';
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 64px;
+    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.50));
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+nav .home {
+    color: var(--Dark, #222831);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+nav .contact {
+    margin-right: none;
+}
+
+.gamburger{
+    display: none;
+}
+
+.btn a {
+    margin-right: 32px;
+    color: var(--Dark, #222831);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration: none;
+}
+
+.btn button {
+    padding: 16px 32px;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--Primary, #5D50C6);
+    color: var(--Light, #EEE);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    border: none;
+    transition: all 1s;
+}
+
+.btn button:hover{
+    border:1px solid black;
+    background-color: white;
+    color:#5D50C6;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        max-width: 896px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
+    }
+
+    nav{
+        display:none;
+    }
+    .gamburger{
+        display:block;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        max-width: 398px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
+    }
+
+    nav{
+        display:none;
+    }
+    .gamburger{
+        display:block;
+    }
+    .btn{
+        display: none;
+    }
+
+    .header{
+        flex-direction: row-reverse;
+    }
+}
